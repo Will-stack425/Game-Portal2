@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Game Portal</h1>
+            <p>Your one-stop destination for fun online games!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="loadGame('https://freezenova.com/#google_vignette')">FreezeNova</a></li>
+                <li><a href="#" onclick="loadGame('https://lichess.org/')">Chess</a></li>
+                <li><a href="#" onclick="loadGame('https://www.jopi.com/gam/space-slide/')">SpaceSlide</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="game-container">
+                <iframe id="gameFrame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Game Portal | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function loadGame(url) {
+            document.getElementById('gameFrame').src = url;
+        }
+    </script>
+</body>
+</html>
